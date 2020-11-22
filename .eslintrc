@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    // typescript:
+    {
+      "files": ["*.ts"],
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "no-console": 2,
+        "@typescript-eslint/no-explicit-any": 0,
+        "no-useless-catch": 0,
+        "semi": [2, "always"]
+      }
+    },
+
+    // javascript:
+    {
+      "files": ["*.js"],
+      "extends": [
+        "eslint:recommended"
+      ],
+      "env": {
+        "node": true
+      },
+      "rules": {
+        "no-console": 2,
+        "semi": [2, "always"]
+      }
+    }
+  ]
+}
