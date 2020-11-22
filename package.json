@@ -6,7 +6,6 @@
   "scripts": {
     "start": "tsc && node dist/server.js",
     "lint": "eslint . --ext .ts",
-    "init-db": "node scripts/init-db.js",
     "test": "jest"
   },
   "repository": {
